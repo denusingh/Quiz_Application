@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rahul.quiz.quiz.result">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/emailtext"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Email:  "
+
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_light_pressed"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/email_value"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="rahul@gmail.com"
+            android:textAlignment="viewStart"
+
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <TextView
+            android:id="@+id/usernam_text"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="Username:  "
+
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_light_pressed"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/username_value"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+
+            android:text="jitender"
+
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/score_text"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="Score:  "
+
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_light_pressed"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/score_value"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+
+            android:text="score_value"
+
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="304dp"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/corect_answer_text"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="Score:  "
+
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_light_pressed"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/corect_answer_value"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+
+            android:text="passed value"
+
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/try_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:text="Do you want to try again!!"
+        android:textColor="@color/cardview_light_background"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+
+</android.support.constraint.ConstraintLayout>
